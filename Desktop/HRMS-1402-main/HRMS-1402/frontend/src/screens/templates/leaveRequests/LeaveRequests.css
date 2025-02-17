@@ -1,0 +1,64 @@
+/* Add container styles */
+.App {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Header section styling */
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Table container responsiveness */
+.leave-table {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.leave-table table {
+  min-width: 1000px; /* Minimum width to prevent squishing */
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Keep your existing styles and add these responsive adjustments */
+@media screen and (max-width: 768px) {
+  .headers {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-actions {
+    justify-content: space-between;
+  }
+
+  .filter-section {
+    padding: 15px;
+  }
+
+  .filter-controls {
+    flex-direction: column;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+}
+
+/* Rest of your existing styles remain the same */
